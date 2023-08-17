@@ -1,65 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-<header>
-
-    <img src="img/Logo_pizza.png" alt="Logo Pizza">
-    <p><span class="Pizza">Pizza </span>& <span class="Front">Front</span></p>
-
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>Ranking</li>
-            <li>Promoción</li>
-            <li>Contacto</li>
-        </ul>
-    </nav>
-</header>
-
-<section>
-    <div><p>Envio gratis comprando 2 pizzas</p></div>
-    <div>
-        <h1>Podio de pizzas</h1>
-
-        <div>
-            <h2>Pizzas top 5</h2>
-            <ol>
-                <li>Muzzarella</li>
-                <li>Hawaiana</li>
-                <li>Muzzarella J&Morron</li>
-                <li>Fugazzeta</li>
-                <li>Calabresa</li>
-            </ol>
-        
-        <img src="img/Pizza_falling.png" alt="Logo Pizza"> 
+    <header>
+        <div class="Logo_nombre">
+            <img src="img/Logo_pizza.png" alt="Logo Pizza" width="92px" height="80px">
+            <p><span class="Pizza">Pizza</span>&<span class="Front">Front</span></p>
         </div>
-        
-    </div>
-    
+        <nav class="Menu_header">
+            <a href=" ">Home</a>
+            <a href=" ">Ranking</a>
+            <a href=" ">Promoción</a>
+            <a href=" ">Contacto</a>
+        </nav>
+    </header>
 
-</section>
+    <section class="Caja_cards">
+        <!-- Aquí se quitan los espacios con los span -->
+        <div class="Delivery_background">
+            <p class="Envio"><span class="Texto_delivery">Envio gratis </span>comprando<span class="Texto_delivery"> 2
+                    pizzas</span></p>
+        </div>
 
-<footer>
-    <ul>
-        <li>Home</li>
-        <li>Contacto</li>
-        <li>Ranking</li>
-        <li>Promoción</li>
-    </ul>
+        <div class="Caja_podio">
+            <div class="Podio_pizzas">
+                <p>Podio de pizzas</p>
+            </div>
+            <div class="Caja_top">
+                <div class="Caja_ingredientes">
+                    <h2 class="Texto_top">Pizzas top 5</h2>
+                    <ol class="Texto_lista">
+                        <li>Muzzarella</li>
+                        <li>Hawaiana</li>
+                        <li>Muzzarella J&Morron</li>
+                        <li>Fugazzeta</li>
+                        <li>Calabresa</li>
+                    </ol>
+                </div>
+                <div class="Img_falling"><img src="img/Pizza_falling.png" alt="Logo Pizza"> </div>
 
-    <img src="img/Logo_pizza.png" alt="Logo Pizza">
-    <p><span>Pizza </span>& <span>Front</span></p>
+            </div>
+        </div>
+    </section>
 
-</footer>
+    <footer>
+        <nav class="Menu_footer">
+            <a href=" ">Home</a>
+            <a href=" ">Contacto</a>
+            <a href=" ">Ranking</a>
+            <a href=" ">Promoción</a>
+        </nav>
 
-
-    
+        <div class="Logo_nombre">
+            <img src="img/Logo_pizza.png" alt="Logo Pizza" width="92px" height="80px">
+            <p><span class="Pizza">Pizza</span>&<span class="Front">Front</span></p>
+        </div>
+    </footer>
 </body>
 </html>

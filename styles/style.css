@@ -1,19 +1,222 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-header{
-width: 1024px;
-height: 100px;
-flex-shrink: 0;
-
-background: #222;
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
-display: flex;
+body {
+  background: #f3f3f3;
+  width: 1024px;
+  /* display: flex;
+    flex-direction: column; */
 }
 
-nav{
-    
+header {
+  width: 1024px;
+  height: 100px;
+  flex-shrink: 0;
+
+  color: #fff;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  background: #222;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 20px;
+}
+
+.Pizza {
+  color: #39b24a;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.Front {
+  color: #fc200c;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+p {
+  padding: 0px 42px 0px 10px;
+}
+
+.Menu_header {
+  width: 304px;
+
+  color: #f3f3f3;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.Logo_nombre {
+  display: flex;
+  align-items: center;
+}
+
+.Delivery_background {
+  width: 490px;
+  height: 350px;
+  flex-shrink: 0;
+
+  background-image: url("../img/Delivery.png");
+  margin: 0px 2.5px 0px 0px;
+}
+
+.Envio {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  padding: 20px 119.38px 302px 19.98px;
+}
+
+.Texto_delivery {
+  color: #fc200c;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.Caja_podio {
+  width: 491px;
+  height: 350px;
+  flex-shrink: 0;
+
+  border-radius: 5px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+
+  margin: 0px 0px 0px 2.5px;
+
+  position: relative;
+}
+
+.Podio_pizzas {
+  color: #fc200c;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 26px;
+}
+
+.Caja_top {
+  display: flex;
+}
+
+.Caja_ingredientes {
+  display: flex;
+  flex-direction: column;
+}
+
+.Texto_top {
+  color: #222;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  position: absolute;
+  left: 69px;
+  top: 112px;
+}
+
+.Texto_lista {
+  color: #222;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  height: 135px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: absolute;
+  right: 267px;
+  bottom: 60px;
+}
+
+.Img_falling {
+  position: absolute;
+  right: 74px;
+  top: 132px;
+}
+
+.Caja_cards {
+  display: flex;
+  padding: 35px 0px;
+  justify-content: center;
+}
+
+footer {
+  width: 1024px;
+  height: 150px;
+  flex-shrink: 0;
+
+  color: #fff;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  background: #222;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.Menu_footer {
+  color: #f3f3f3;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  padding: 19px 0px 19px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
