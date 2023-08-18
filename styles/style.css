@@ -80,6 +80,10 @@ p {
   align-items: center;
 }
 
+.Icono_barras {
+  display: none;
+}
+
 .Delivery_background {
   width: 490px;
   height: 350px;
@@ -237,8 +241,7 @@ a {
   color: inherit;
 }
 
-@media (max-width: 480px) {
-
+@media (max-width: 700px) {
   .Caja_cards {
     flex-direction: column-reverse;
   }
@@ -266,5 +269,12 @@ a {
   .Menu_footer {
     font-size: 10px;
     padding: 6px 20px 6px 0px;
+  }
+
+  .Icono_barras {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0px 25px 0px 0px;
   }
 }
