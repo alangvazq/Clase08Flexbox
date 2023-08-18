@@ -5,13 +5,20 @@
 
 body {
   background: #f3f3f3;
-  width: 1024px;
-  /* display: flex;
-    flex-direction: column; */
+  /* width: 1024px; */
+  /* display: flex; */
+
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+
+  /* footer en la parte inferior con flexbox*/
+  /* flex-direction: column;
+    min-height: 100vh; */
 }
 
 header {
-  width: 1024px;
+  /* width: 1024px; */
   height: 100px;
   flex-shrink: 0;
 
@@ -79,7 +86,7 @@ p {
   flex-shrink: 0;
 
   background-image: url("../img/Delivery.png");
-  margin: 0px 2.5px 0px 0px;
+  margin: 17px 2.5px;
 }
 
 .Envio {
@@ -112,9 +119,11 @@ p {
   display: flex;
   flex-direction: column;
 
-  margin: 0px 0px 0px 2.5px;
+  margin: 17px 2.5px;
 
   position: relative;
+
+  margin: 17px 2.5px;
 }
 
 .Podio_pizzas {
@@ -179,12 +188,16 @@ p {
 
 .Caja_cards {
   display: flex;
-  padding: 35px 0px;
+
+  /* padding: 35px 0px; */
+  flex-wrap: wrap;
+
   justify-content: center;
+  align-content: center;
 }
 
 footer {
-  width: 1024px;
+  width: 100%;
   height: 150px;
   flex-shrink: 0;
 
@@ -200,6 +213,9 @@ footer {
 
   display: flex;
   justify-content: space-between;
+
+  /* footer inferior con flexbox*/
+  /* margin-top: auto; */
 }
 
 .Menu_footer {
@@ -208,7 +224,7 @@ footer {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 25px;
+  line-height: normal;
   padding: 19px 0px 19px 20px;
 
   display: flex;
@@ -219,4 +235,36 @@ footer {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+@media (max-width: 480px) {
+
+  .Caja_cards {
+    flex-direction: column-reverse;
+  }
+
+  footer {
+    flex-direction: row-reverse;
+    padding: 0px 0px 0px 20px;
+    height: 84px;
+  }
+
+  .Menu_header {
+    display: none;
+  }
+
+  .img_logo {
+    width: 57.402px;
+    height: 50px;
+    flex-shrink: 0;
+  }
+
+  p {
+    padding: 0px 42px 0px 6.24px;
+  }
+
+  .Menu_footer {
+    font-size: 10px;
+    padding: 6px 20px 6px 0px;
+  }
 }
